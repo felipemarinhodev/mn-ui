@@ -1,0 +1,59 @@
+.button,
+.button:hover,
+.button:disabled,
+.buttonDark {
+  transition-duration: 0.1s;
+}
+
+.button,
+.buttonDark {
+  border: 2px solid var(--ButtonBorder);
+  outline: none;
+  width: 100%;
+  height: 36px;
+  border-radius: 30px;
+  background-color: var(--ButtonBackground);
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: var(--ButtonColor);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button:hover,
+.buttonDark:hover {
+  color: var(--ButtonColorHover);
+  background-color: var(--ButtonBackgroundHover);
+  cursor: pointer;
+}
+
+.button:disabled,
+.buttonDark:disabled {
+  background-color: var(--ButtonBackgroundDisabled);
+  color: var(--ButtonColorDisabled);
+  cursor: not-allowed;
+  box-shadow: none;
+  border: 2px solid var(--ButtonBackgroundDisabled);
+}
+
+.buttonDark {
+  background-color: transparent;
+  color: var(--ButtonBorderOutline);
+  border: 2px solid var(--ButtonBorderOutline);
+}
+
+.defaultSize {
+  max-width: 300px;
+  min-width: 100px;
+}
+
+.fullSize {
+  max-width: 'none';
+}

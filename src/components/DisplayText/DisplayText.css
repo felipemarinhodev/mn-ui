@@ -1,0 +1,21 @@
+.collapsible {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.link {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.text {
+  position: absolute;
+}
+
+.text:not(.open) > * {
+  display: none;
+}

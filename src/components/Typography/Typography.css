@@ -1,0 +1,76 @@
+p, span, label, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.typography {
+  cursor: default;
+}
+
+.paragraphy {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  margin: 0;
+
+  text-overflow: ellipsis;
+}
+
+.span {
+  font-weight: 300;
+  font-size: 1.625rem;
+  line-height: 29.87px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: .75rem;
+  line-height: 22px;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.h4 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.h5 {
+  font-weight: 700;
+  font-size: .75rem;
+}
+
+.color-primary {
+  color: var(--HeaderColor);
+}
+.color-secondary {
+  color: var(--MetroNetText);
+}
+.color-default {
+  color: var(--MetroNetText);
+}
+.color-blue {
+  color: var(--MetroNetBlue);
+}
+.color-purple {
+  color: var(--MetroNetPurple-3);
+}
+.color-red {
+  color: var(--MetroNetRed-danger);
+}
+.color-yellow {
+  color: var(--MetroNetYellow);
+}

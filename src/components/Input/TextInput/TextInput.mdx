@@ -1,0 +1,19 @@
+import {Meta, Primary, Canvas, Controls} from "@storybook/blocks";
+
+import * as Story from "./TextInput.stories.tsx"
+
+<Meta of={Story} />
+
+# TextInput
+
+## Primary
+<Canvas of={Story.Default} />
+
+### WithLabel
+<Canvas of={Story.WithLabel} />
+
+### Error
+<Canvas of={Story.Error} />
+
+<Primary />
+<Controls />

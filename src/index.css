@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend");
+
+:root {
+  /* Original Color Codes */
+  --MetroNetBlue: #003767;
+  --MetroNetGreenOld: #7ac142;
+  --MetroNetGray: #8b8b8d;
+
+  /* New Color Codes*/
+  --MetroNetPrimaryDark: black;
+  --MetroNetSecondaryDark: #2b2929;
+  --MetroNetYellow: #f2f000;
+  --MetroNetPurple: #7d31b8;
+  --MetroNetPurple-3: #742DCE;
+  --MetroNetPurpleDisabled: #381664;
+  --MetroNetGreen: #07b013;
+  --MetroNetTextColor: #0d5e16;
+  --MetroNetPlaceholderColor: #5f5e5b;
+  --MetroNetInputColor: #d2d2d2;
+  --scrollbarWidth: 10px;
+
+  --MetroNetGray-50: #FBFBFB;
+  --MetroNetGray-400: #C5C5C5;
+  --MetroNetGray-600: #737373;
+  --MetroNetGray-800: #3C3C3C;
+  --MetroNetGray-900: #242424;
+  --MetroNetGray-950: #121212;
+  /* Figma Theme Colors */
+  --Yellow1: #d9d91d;
+  --Yellow2: #f0f022;
+  --MetroNetRed-danger:#F04438;
+
+  /* ---Default Theme--- */
+  /* Misc */
+  --Background: var(--MetroNetPrimaryDark);
+  --Copyright: var(--MetroNetYellow);
+  --SectionHeader: var(--MetroNetYellow);
+  --SectionHeader1: var(--MetroNetGray-50);
+  --HeaderLabel: var(--MetroNetGray-50);
+  /* --Divider: var(--MetroNetSecondaryDark); */
+    --Divider: var(--MetroNetGray-600);
+  --AvailableYardQuantity: var(--MetroNetYellow);
+  --CartMaterialsDivider: var(--MetroNetSecondaryDark);
+  --CartMaterialsDividerHover: var(--MetroNetYellow);
+  --PlaceholderColor: var(--MetroNetPlaceholderColor);
+  --FullscreenText: var(--MetroNetYellow);
+
+  /* Mode Text */
+  --ModeLabelShadow: var(--MetroNetGreen);
+  --ModeLabel: var(--MetroNetPrimaryDark);
+
+  /* Project Label */
+  --ProjectLabel: var(--MetroNetSecondaryDark);
+  --ProjectLabelFlicker: var(--MetroNetPurple);
+  --ProjectFilterShadow1: var(--MetroNetSecondaryDark);
+  --ProjectFilterShadow2: var(--MetroNetPurple);
+
+  /* Navigation */
+  --MenuHeaderBackground: var(--MetroNetPrimaryDark);
+  --MenuHeaderBorder: var(--MetroNetSecondaryDark);
+  --MenuPrimaryTextColor: var(--MetroNetInputColor);
+  --MenuPrimaryTextColorHover: var(--MetroNetPurple);
+  --MenuSubMenu1Background: var(--MetroNetSecondaryDark);
+  --MenuSubMenu1Border: var(--MetroNetPrimaryDark);
+  --MenuSubMenu2Background: var(--MetroNetPlaceholderColor);
+  --MenuSubMenu2Border: var(--MetroNetSecondaryDark);
+  --MenuMobileBorder: var(--MetroNetPurple);
+  --MenuMobileTitleSeparator: var(--MetroNetSecondaryDark);
+  --MenuMobileSeparatorBorder: var(--MetroNetPrimaryDark);
+  --MenuMobileBackgroundFocused: var(--MetroNetPrimaryDark);
+
+  /* Logo */
+  --LogoTop: var(--MetroNetGreen);
+  --LogoBottom: var(--MetroNetPurple);
+  --LogoFront: var(--MetroNetGreen);
+  --LogoEnd: var(--MetroNetPurple);
+
+  /* Activity Indicator */
+  --ActivityIndicatorText: var(--MetroNetYellow);
+  --ActivityBackground: var(--MetroNetPrimaryDark);
+  --ActivitySpinners: var(--MetroNetGreen);
+
+  /* Input */
+  --TextArea: var(--MetroNetSecondaryDark);
+  --InputColor: var(--MetroNetGray-400);
+  --InputFocusColor: var(--MetroNetGreen);
+
+  /* Checkboxes */
+  --Checkbox: var(--MetroNetSecondaryDark);
+  --CheckboxBorder: var(--MetroNetGreen);
+  --CheckboxFilled: var(--MetroNetGreen);
+  --CheckboxLabel: var(--MetroNetInputColor);
+
+  /* Calendar */
+  --CalendarBackground: var(--MetroNetSecondaryDark);
+  --CalendarBorder: var(--MetroNetSecondaryDark);
+  --CalendarDay: var(--MetroNetGreen);
+  --CalendarHover: var(--MetroNetPurple);
+  --CalendarHoverColor: var(--MetroNetSecondaryDark);
+
+  /* Buttons */
+  --ButtonColor: var(--MetroNetPrimaryDark);
+  --ButtonBackground: var(--MetroNetYellow);
+  --ButtonColorDisabled: var(--MetroNetPlaceholderColor);
+  --ButtonBackgroundDisabled: var(--MetroNetSecondaryDark);
+  --ButtonBackgroundHover: var(--MetroNetPurple);
+  --ButtonColorHover: var(--MetroNetPrimaryDark);
+  --ButtonBorderOutline: white;
+
+  /* WO Data */
+  --MaterialCardBorder: var(--MetroNetPurple);
+  --WODescription: var(--MetroNetGreen);
+  --ThumbnailBorder: var(--MetroNetSecondaryDark);
+  --ThumbnailBorderHover: var(--MetroNetYellow);
+  --AvailableYardQuantity: var(--MetroNetYellow);
+
+  /* Photos */
+  --PhotoBorderColor: var(--MetroNetPurple);
+  --PhotoBorderColorHover: var(--MetroNetGreen);
+
+  /* Prompts */
+  --PromptBackground: var(--MetroNetPrimaryDark);
+  --PromptBorderColor: var(--MetroNetPurple);
+
+  /* Tables */
+  --TableTHBackground: var(--MetroNetSecondaryDark);
+  --TableHeaderColor: var(--MetroNetInputColor);
+  --TableHeaderBackground: var(--MetroNetPurple);
+  --TableBorder: var(--MetroNetPurple);
+  --TableOddRowsBackground: var(--MetroNetSecondaryDark);
+  --TableColor: var(--MetroNetInputColor);
+  --TableLinkColor: var(--MetroNetPurple);
+
+  /* Toasts */
+  --ToastBorderColor: var(--MetroNetPurple);
+  --ToastBackground: var(--MetroNetSecondaryDark);
+  --ToastColor: var(--MetroNetGreen);
+  --ToastMessage: var(--MetroNetYellow);
+/* Headers */
+  --HeaderColor: var(--MetroNetYellow);
+
+  /* Text */
+  --MetroNetText: var(--MetroNetGray-50);
+}
+/* 424B5A */
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: var(--scrollbarWidth);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--MetroNetSecondaryDark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb,
+::-webkit-resizer {
+  background: gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--MetroNetGreen);
+}
+
+/* Hide arrows on number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Overwrite default browser auto-complete styles. */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: var(--MetroNetInputColor);
+  caret-color: var(--MetroNetInputColor);
+  -webkit-box-shadow: 0 0 0px 1000px var(--TextArea) inset;
+  box-shadow: 0 0 0px 1000px var(--TextArea) inset;
+}
+
+/* Body */
+body {
+  min-width: 320px !important; /*Smallest device width in browser dev tools (iphone 5/SE)*/
+  font-family: "Lexend", Arial, Helvetica, sans-serif;
+  padding-top: 60px;
+  background: var(--Background);
+  background-color: var(--Background);
+  color: var(--InputColor);
+  width: 100%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+/* ---Light Theme--- */
+.light {
+  /* Misc */
+  --Background: white;
+  --Copyright: var(--MetroNetBlue);
+  --SectionHeader: var(--MetroNetBlue);
+  --SectionHeader1: var(--MetroNetBlue);
+  --HeaderLabel: var(--MetroNetGray-800);
+  /* --Divider: var(--MetroNetBlue); */
+    --Divider: var(--MetroNetGray-600);
+  --AvailableYardQuantity: black;
+  --CartMaterialsDivider: var(--MetroNetBlue);
+  --CartMaterialsDividerHover: var(--MetroNetGreen);
+  --PlaceholderColor: var(--MetroNetPlaceholderColor);
+  --FullscreenText: white;
+
+  /* Mode Text */
+  --ModeLabelShadow: var(--MetroNetBlue);
+  --ModeLabel: white;
+
+  /* Project Label */
+  --ProjectLabel: var(--MetroNetInputColor);
+  --ProjectLabelFlicker: var(--MetroNetBlue);
+  --ProjectFilterShadow1: var(--MetroNetSecondaryDark);
+  --ProjectFilterShadow2: var(--MetroNetPurple);
+
+  /* Navigation */
+  --MenuHeaderBackground: var(--MetroNetBlue);
+  --MenuHeaderBorder: var(--MetroNetPrimaryDark);
+  --MenuPrimaryTextColor: black;
+  --MenuPrimaryTextColorHover: var(--MetroNetGreen);
+  --MenuSubMenu1Background: white;
+  --MenuSubMenu1Border: var(--MetroNetBlue);
+  --MenuSubMenu2Background: var(--MetroNetInputColor);
+  --MenuSubMenu2Border: var(--MetroNetInputColor);
+  --MenuMobileBorder: var(--MetroNetGreen);
+  --MenuMobileTitleSeparator: var(--MetroNetGreen);
+  --MenuMobileSeparatorBorder: var(--MetroNetGreen);
+  --MenuMobileBackgroundFocused: white;
+
+  /* Logo */
+  --LogoTop: whitesmoke;
+  --LogoBottom: var(--MetroNetBlue);
+  --LogoFront: var(--MetroNetGreen);
+  --LogoEnd: var(--MetroNetInputColor);
+
+  /* Activity Indicator */
+  --ActivityIndicatorText: var(--MetroNetBlue);
+  --ActivityBackground: white;
+  --ActivitySpinners: var(--MetroNetGreen);
+
+  /* Input */
+  --TextArea: white;
+  --InputColor: var(--MetroNetGray-900);
+  --InputFocusColor: var(--MetroNetGreen);
+
+  /* Checkboxes */
+  --Checkbox: white;
+  --CheckboxBorder: var(--MetroNetPurple);
+    --CheckboxFilled: var(--MetroNetPurple);
+  --CheckboxLabel: var(--MetroNetBlue);
+
+  /* Calendar */
+  --CalendarBackground: white;
+  --CalendarBorder: var(--MetroNetBlue);
+  --CalendarDay: var(--MetroNetGreen);
+  --CalendarHover: var(--MetroNetBlue);
+  --CalendarHoverColor: white;
+
+  /* Buttons */
+  --ButtonColor: white;
+    --ButtonBackground: var(--MetroNetPurple-3);
+  --ButtonColorDisabled: var(--MetroNetInputColor);
+  --ButtonBackgroundDisabled: var(--MetroNetSecondaryDark);
+  --ButtonBackgroundHover: var(--MetroNetGreen);
+  --ButtonColorHover: black;
+  --ButtonBorderOutline: var(--MetroNetPurple-3);
+
+  /* WO Data */
+  --MaterialCardBorder: var(--MetroNetBlue);
+  --WODescription: var(--MetroNetGreen);
+  --ThumbnailBorder: black;
+  --ThumbnailBorderHover: var(--MetroNetGreen);
+  --AvailableYardQuantity: black;
+
+  /* Photos */
+  --PhotoBorderColor: var(--MetroNetBlue);
+  --PhotoBorderColorHover: var(--MetroNetGreen);
+
+  /* Prompts */
+  --PromptBackground: white;
+  --PromptBorderColor: var(--MetroNetBlue);
+
+  /* Tables */
+  --TableTHBackground: white;
+  --TableHeaderColor: white;
+  --TableHeaderBackground: var(--MetroNetBlue);
+  --TableBorder: var(--MetroNetBlue);
+  --TableOddRowsBackground: lightgray;
+  --TableColor: black;
+  --TableLinkColor: var(--MetroNetBlue);
+
+  /* Toasts */
+  --ToastBorderColor: var(--MetroNetBlue);
+  --ToastBackground: white;
+  --ToastColor: black;
+  --ToastMessage: var(--MetroNetGreen);
+/* Headers */
+  --HeaderColor: var(--MetroNetGreen);
+
+  /* Text */
+  --MetroNetText: var(--MetroNetGray-900);
+}

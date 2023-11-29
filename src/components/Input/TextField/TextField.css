@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  background-color: var(--TextArea);
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 100%;
+  gap: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  -o-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-size: 1.125rem;
+  color: var(--InputColor);
+}
+
+.wrapper input:focus:not(:placeholder-shown) {
+  color: var(--InputFocusColor);
+}
+
+.readonly {
+  cursor: not-allowed;
+}
+
+.outline-color-default {
+  outline: none;
+}
+.outline-color-primary{
+  outline: 1px solid var(--MetroNetGreen);
+}
+.outline-color-secondary{
+  outline: 1px solid var(--MetroNetPurple);
+}
+.outline-color-blue{
+  outline: 1px solid var(--MetroNetBlue);
+}
+.outline-color-purple{
+  outline: 1px solid var(--MetroNetPurple);
+}
+.outline-color-red{
+  outline: 1px solid var(--MetroNetRed-danger);
+}
+.outline-color-yellow{
+  outline: 1px solid var(--Yellow1);
+}

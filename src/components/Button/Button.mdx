@@ -1,0 +1,25 @@
+import {Meta, Primary, Canvas, Controls} from "@storybook/blocks";
+
+import * as Story from "./Button.stories.tsx"
+
+<Meta of={Story} />
+
+# Button
+
+## Primary
+<Canvas of={Story.Default} />
+
+### Disabled
+<Canvas of={Story.Disabled} />
+
+## Outline
+<Canvas of={Story.Outline} />
+
+### OutlineDisabled
+<Canvas of={Story.OutlineDisabled} />
+
+## FullSize
+<Canvas of={Story.FullSize} />
+
+<Primary />
+<Controls />

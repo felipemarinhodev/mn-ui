@@ -1,0 +1,25 @@
+import {Meta, Primary, Canvas, Controls} from "@storybook/blocks";
+
+import * as Story from "./Mode.stories.tsx"
+
+<Meta of={Story} />
+
+# Typography
+
+## Primary
+<Canvas of={Story.Default} />
+
+### Production
+<Canvas of={Story.Production} />
+
+### Development
+<Canvas of={Story.Development} />
+
+### QA
+<Canvas of={Story.QA} />
+
+### UAT
+<Canvas of={Story.UAT} />
+
+<Primary />
+<Controls />

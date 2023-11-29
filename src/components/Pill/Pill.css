@@ -1,0 +1,11 @@
+.pill {
+  background: var(--MetroNetGray-800);
+
+  svg:last-child {
+    border-left: 1 solid var(--MetroNetGray-900);
+  }
+}
+
+.pill:hover {
+ background: "olive"; 
+}
